@@ -29,7 +29,9 @@ class EventsController < ApplicationController
   end
 
   def show
-    respond_with(@event)
+    #respond_with(@event)
+    @event = Event.find(params[:id])
+    @comment = Event.find(params[:id]).comments.build
   end
 
   def new

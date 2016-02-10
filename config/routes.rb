@@ -8,7 +8,10 @@ Rails.application.routes.draw do
 #    root to: "events#index", as: "authenticated_root"
 #  end
 
-  resources :events
+  resources :events do 
+    resources :comments
+  end
+  
   resources :reports
 
   root 'events#root' # What's the difference between "root" and "root to:""??

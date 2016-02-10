@@ -4,7 +4,7 @@
   <% if isEventPage? %>
     <title><%= @event.title %> :<%= @event.user.name %></title>
   <% else %>
-    <title>LumberMill's Events</title>
+    <title>Events</title>
   <% end %>
   <%= javascript_include_tag 'application' %>
   <!-- Latest compiled and minified CSS -->
@@ -42,7 +42,7 @@
     <%= yield %>
     <%= render 'layouts/google_ad' %>
     <footer class="footer">
-      <a href="http://www.lumber-mill.co.jp/notes/">LumberMill, Inc.</a>
+      <a href="">2015 S.kihara.</a>
     </footer>
   </div>
 </body>
