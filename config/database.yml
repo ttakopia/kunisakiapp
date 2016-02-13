@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: events_lmlab_net_production
-  #username: events_lmlab_net
-  #password: <%= ENV['EVENTS_LMLAB_NET_DATABASE_PASSWORD'] %>
+  username: root
+  password: sk03160316

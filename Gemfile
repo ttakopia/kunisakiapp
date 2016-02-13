@@ -45,3 +45,12 @@ gem 'omniauth-facebook', '~> 2.0.0'
 # Didn't work!!
 # gem 'less-rails', '~> 2.6.0'
 # gem 'twitter-bootstrap-rails', '~> 3.2.0'
+
+group :production, :staging do
+  gem 'unicorn'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
+end
