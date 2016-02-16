@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'kunisakiapp'
-set :repo_url, 'github.com:ttakopia/kunisakiapp.git'
+set :repo_url, 'git@github.com:ttakopia/kunisakiapp.git'
 
 # ask :user, `whoami`.chomp
 
