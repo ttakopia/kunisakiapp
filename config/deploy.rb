@@ -26,7 +26,7 @@ set :deploy_to, '/var/www/rails/kunisakiapp'
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
-set :linked_files, fetch(:linked_files, []).push('config/settings/production.yml')
+# set :linked_files, fetch(:linked_files, []).push('config/settings/production.yml')
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
@@ -66,11 +66,11 @@ namespace :deploy do
   end
   after :publishing, :restart
   after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do; end
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-    end
   end
+  after :finished, :cleanup
 end
