@@ -1,4 +1,4 @@
-server   '52.193.136.123',
+server   'www.come-on-kunisaki',
     user:  'kunisakiapp',
     roles: %w{app db web},
     ssh_options: {
