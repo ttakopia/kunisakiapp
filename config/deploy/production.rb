@@ -1,16 +1,7 @@
-server   '52.193.136.123',
-    user:  'kunisakiapp',
-    roles: %w{app db web},
-    ssh_options: {
-      keys: [
-        # for ec2
-        File.expand_path('~/.ssh/kunisakiapp'),
-        # for github
-        File.expand_path('~/.ssh/kunisaki')
-      ],
-      forward_agent: true,
-      auth_methods: %w(publickey)
-    }
+# server   '52.193.136.123',
+
+server '52.193.136.123', user: 'kunisakiapp', roles: %{web app db} #serverのipとuser名は適宜
+set :ssh_options, keys: '~/.ssh/kunisakiapp' #ssh_keyの名前は適宜
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
