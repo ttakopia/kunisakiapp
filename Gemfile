@@ -48,7 +48,7 @@ gem 'omniauth-facebook', '~> 2.0.0'
 
 group :production, :staging do
   gem 'unicorn'
-  gem 'capistrano', git: 'https://github.com/capistrano/capistrano.git'
+  gem 'capistrano', '~> 3.2.1'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'

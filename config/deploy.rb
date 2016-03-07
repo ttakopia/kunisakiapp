@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-  lock '3.4.0'
+  lock '3.2.1'
   set :rbenv_ruby,    '2.2.0'
   set :application,   'kunisakiapp'
   set :repo_url,      'git@github.com:ttakopia/kunisakiapp.git'
